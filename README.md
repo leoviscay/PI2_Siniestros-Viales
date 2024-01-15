@@ -81,9 +81,10 @@ En segundo lugar, se procedió a realizar un análisis exploratorio exahustivo (
 
 <p style="text-indent: 20px;">
 Finalmente, para la construcción de un dashboard interactivo se utiliza Power BI, el cuál se puede consultar <a href=<a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/Dashboard_PI2.pbix>aquí</a> o accediendo desde el siguiente QR a PowerBi:
+</p>
 
-<img alingn=center src="images/Dashboard_PI2.jpg" alt="Tasa de Homicidios en Siniestros Viales">
-
+<p style="text-indent: 20px;">
+<img alingn=center src="images/Dashboard_PI2.jpg" alt=>
 </p>
 
 <h4>EDA</h4>
@@ -141,6 +142,10 @@ Cuando se calcula el KPI para este período se obtiene que la Tasa de homicidios
 <p style="text-indent: 20px;">
 En este caso se define a la Cantidad de accidentes mortales de motociclistas como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que viajaban en moto en un determinado periodo temporal. La fórmula para medir la evolución de los accidentes mortales con víctimas en moto es:
 
+</p>
+
+<p style="text-indent: 20px;">
+
 <img src="images/Stros_Motos.png" alt="Tasa de Homicidios en Motociclistas">
 </p>
 
@@ -153,7 +158,11 @@ Aquí, se toma como año actual al año 2021 y como año anterior al año 2020. 
 <p style="text-indent: 20px;">
 En este caso se define a la Cantidad de accidentes mortales de ciclistas como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que vse trasladaban en bici en un determinado periodo temporal. La fórmula para medir la evolución de los accidentes mortales con víctimas en bicicleta es:
 
-<img src="images/Stros_Bici.png" alt="Tasa de Homicidios en Motociclistas">
+</p>
+
+<p style="text-indent: 20px;">
+
+<img src="images/Stros_Bici.png" alt="Tasa de Homicidios en Ciclistas">
 </p>
 
 <p style="text-indent: 20px;">

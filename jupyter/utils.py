@@ -237,3 +237,81 @@ def accidentes_x_hora_diario(df):
 
     # Se muestra el gráfico
     plt.show()
+
+
+def cantidad_victimas_sexo_rol_victima(df):
+    '''
+    Genera un resumen de la cantidad de víctimas por sexo, rol y tipo de vehículo en un accidente de tráfico.
+
+    Esta función toma un DataFrame como entrada y genera un resumen que incluye:
+
+    * Gráficos de barras que muestran la cantidad de víctimas por sexo, rol y tipo de vehículo en orden descendente.
+    * DataFrames que muestran la cantidad y el porcentaje de víctimas por sexo, rol y tipo de vehículo.
+
+    Parameters:
+        df (pandas.DataFrame): El DataFrame que se va a analizar.
+
+    Returns:
+        None
+    '''
+    # Se crea el gráfico
+    fig, axes = plt.subplots(1, 3, figsize=(15, 4))
+
+    # Gráfico 1: Sexo
+    sns.countplot(data=df, x='Sexo', ax=axes[0])
+    axes[0].set_title('Cantidad de víctimas por sexo') ; axes[0].set_ylabel('Cantidad de víctimas')
+
+    # Se define una paleta de colores personalizada (invierte los colores)
+    colores_por_defecto = sns.color_palette()
+    colores_invertidos = [colores_por_defecto[1], colores_por_defecto[0]]
+    
+    # Gráfico 2: Rol
+    df_rol = df.groupby(['Rol', 'Sexo']).size().unstack(fill_value=0)
+    df_rol.plot(kind='bar', stacked=True, ax=axes[1], color=colores_invertidos)
+    axes[1].set_title('Cantidad de víctimas por rol') ; axes[1].set_ylabel('Cantidad de víctimas') ; axes[1].tick_params(axis='x', rotation=45)
+    axes[1].legend().set_visible(False)
+    
+    # Gráfico 3: Tipo de vehículo
+    df_victima = df.groupby(['Víctima', 'Sexo']).size().unstack(fill_value=0)
+    df_victima.plot(kind='bar', stacked=True, ax=axes[2], color=colores_invertidos)
+    axes[2].set_title('Cantidad de víctimas por tipo de vehículo') ; axes[2].set_ylabel('Cantidad de víctimas') ; axes[2].tick_params(axis='x', rotation=45)
+    axes[2].legend().set_visible(False)
+
+    # Se muestran los gráficos
+    plt.show()
+
+def cantidad_victimas_participantes(df):
+    '''
+    Genera un resumen de la cantidad de víctimas por número de participantes en un accidente de tráfico.
+
+    Esta función toma un DataFrame como entrada y genera un resumen que incluye:
+
+    * Un gráfico de barras que muestra la cantidad de víctimas por número de participantes en orden descendente.
+    * Un DataFrame que muestra la cantidad y el porcentaje de víctimas por número de participantes.
+
+    Parameters:
+        df (pandas.DataFrame): El DataFrame que se va a analizar.
+
+    Returns:
+        None
+    '''
+    # Se ordenan los datos por 'Participantes' en orden descendente por cantidad
+    ordenado = df['Participantes'].value_counts().reset_index()
+    ordenado = ordenado.rename(columns={'Cantidad': 'participantes'})
+    ordenado = ordenado.sort_values(by='count', ascending=False)
+    
+    plt.figure(figsize=(15, 4))
+    
+    # Se crea el gráfico de barras
+    ax = sns.barplot(data=ordenado, x='Participantes', y='count', order=ordenado['Participantes'])
+    ax.set_title('Cantidad de víctimas por participantes')
+    ax.set_ylabel('Cantidad de víctimas')
+    # Rotar las etiquetas del eje x a 45 grados
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=45, horizontalalignment='right')
+
+    # Se muestra el gráfico
+    plt.show()
+
+
+
+   
