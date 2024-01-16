@@ -80,7 +80,7 @@ En segundo lugar, se procedió a realizar un análisis exploratorio exahustivo (
 </p>
 
 <p style="text-indent: 20px;">
-Finalmente, para la construcción de un dashboard interactivo se utiliza Power BI, el cuál se puede consultar <a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/Dashboard_PI2.pbix>aquí</a> o accediendo desde el siguiente QR a PowerBi:
+Finalmente, para la construcción de un dashboard interactivo se utiliza Power BI, el cuál se puede consultar git add rea<a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/Dashboard_PI2.pbix>aquí</a> o accediendo desde el siguiente QR a PowerBi:
 </p>
 
 <p style="text-indent: 20px;">
@@ -90,7 +90,11 @@ Finalmente, para la construcción de un dashboard interactivo se utiliza Power B
 <h4>EDA</h4>
 
 <p style="text-indent: 20px;">
-En primer instancia, se analizó fue variable temporal, para entender la distribución de los homicidios en distintas escalas temporales. La distribución anual de la cantidad de víctimas fatales es de alrededor del 60% para los primeros 3 años del conjunto de datos, con una disminución marcada para el 2020 como consecuencia de la cuarentena por COVID 19. El comportamiento a lo largo del año, es decir, la variación mensual, si bien para todo el conjunto de datos es marcada, con un pico de víctimas en Diciembre, esta tendencia no se observa tan claramente entre los distintos años. Este resultado de la mayor cantidad de víctimas en Diciembre está influenciada por la flexibilización de las medidas tomadas por la cuarentena.
+En primer instancia, se analizó fue variable temporal, para entender la distribución de los homicidios en distintas escalas temporales. La distribución anual de la cantidad de víctimas fatales superó el % para los primeros 3 años del conjunto de datos, con una disminución marcada para el 2020 como consecuencia de la cuarentena por COVID 19. El comportamiento a lo largo del año, es decir, la variación mensual, si bien para todo el conjunto de datos es marcada, con un pico de víctimas en Diciembre, esta tendencia no se observa tan claramente entre los distintos años. Este resultado de la mayor cantidad de víctimas en Diciembre está influenciada por la flexibilización de las medidas tomadas por la cuarentena.
+</p>
+
+<p style="text-indent: 20px;">
+<img alingn=center src="images/analisis_temporal.png" alt= "Analisis Temporal">
 </p>
 
 <p style="text-indent: 20px;">
@@ -103,6 +107,10 @@ Si se analizan las franjas horarias, la mayor cantidad de víctimas, se presenta
 
 <p style="text-indent: 20px;">
 Lo siguiente que se hizo fue analizar el perfil de la víctima. En primero lugar se ve que el 77% de las víctimas son masculinas. Y en cuanto al rol de la víctima, es decir la posición relativa que ocupaba al momento del hecho, el 48% era conductor. En particular, este 48% se distribuye en un 77% de víctimas que se movilizaban en moto y 19% en auto. En relación a la cantidad de víctimas según el medio de transporte al momento del hecho, el 42% de las víctimas son conductores de moto, de los cuales el 88% de los conductores de moto son masculino.
+</p>
+
+<p style="text-indent: 20px;">
+<img alingn=center src="images/perfil_victima.png" alt="Perfil Victima">
 </p>
 
 <p style="text-indent: 20px;">
