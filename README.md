@@ -76,11 +76,11 @@ En primer lugar, se realizó un proceso de extracción, transformación y carga 
 </p>
 
 <p style="text-indent: 20px;">
-En segundo lugar, se procedió a realizar un análisis exploratorio exahustivo (EDA), con la finalidad de encontrar patrones que permitan generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales. Todos los detalles de este análisis se encuentran <a href=<a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/jupyter/ETL%20_EDA_Homicidios.ipynb>aquí</a>.
+En segundo lugar, se procedió a realizar un análisis exploratorio exahustivo (EDA), con la finalidad de encontrar patrones que permitan generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales. Todos los detalles de este análisis se encuentran <a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/jupyter/ETL%20_EDA_Homicidios.ipynb>aquí</a>.
 </p>
 
 <p style="text-indent: 20px;">
-Finalmente, para la construcción de un dashboard interactivo se utiliza Power BI, el cuál se puede consultar <a href=<a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/Dashboard_PI2.pbix>aquí</a> o accediendo desde el siguiente QR a PowerBi:
+Finalmente, para la construcción de un dashboard interactivo se utiliza Power BI, el cuál se puede consultar <a href=https://github.com/leoviscay/PI2_Siniestros-Viales/blob/main/Dashboard_PI2.pbix>aquí</a> o accediendo desde el siguiente QR a PowerBi:
 </p>
 
 <p style="text-indent: 20px;">
